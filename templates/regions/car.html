@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %} CAR {% endblock %}
+{% block content %}
+<!-- Top -->
+<div class="card bg-dark text-white">
+  <img class="card-img-top" src="static/regions/region_header.jpg" alt="Card image cap" height=400>
+  <div class="card-img-overlay">
+    <h1 class="card-title">Maligayang Pagdating sa Cordillera Region!</h1>
+  </div>
+</div>
+
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <form method="POST", action="/car">
+        <div class="dropdown">
+				  <select name="region" id="province" class="browser-default custom-select">
+            <option value="CAR">CAR</option>
+            <option value="Region I">Region I</option>
+            <option value="Region II">Region II</option>
+					  <option value="Region III">Region III</option>
+            <option value="Region IV-A">Region IV-A</option>
+            <option value="MIMAROPA">MIMAROPA</option>
+				  </select>
+			   </div>
+         <br>
+      <h5 class="card-title">Check Produce</h5>
+      <div class="dropdown">
+        <select name="crops" id="harvest" class="browser-default custom-select">
+          <option value="Palay">Palay</option>
+          <option value="Corn">Corn</option>
+          <option value="Banana">Banana</option>
+          <option value="Calamansi">Calamansi</option>
+          <option value="Durian">Durian</option>
+          <option value="Lanzones">Lanzones</option>
+          <option value="Mango">Mango</option>
+          <option value="Orange">Orange</option>
+          <option value="Papaya">Papaya</option>
+          <option value="Pineapple">Pineapple</option>
+          <option value="Rambutan">Rambutan</option>
+          <option value="Tamarind">Tamarind</option>
+          <option value="Watermelon">Watermelon</option>
+          <option value="Coconut">Coconut</option>
+        </select>
+      </div>
+      <br>
+      <div class="center-screen">
+            <input class="btn btn-primary" type="submit" value="See The Graph">
+      </div class="buttonHolder">
+<br>
+
+    </form>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <img src="{{line}}" alt="Line" height=400 width=500>
+    <div class="card-body">
+      <h5 class="card-title">Volume Production of Palay</h5>
+    </div>
+  </div>
+
+
+  <div class="card">
+      <img src="{{bar}}" alt="bar" height=400 width=500>
+    <div class="card-body">
+      <h5 class="card-title">Total Produce per Region</h5>
+    </div>
+  </div>
+</div>
+
+<br>
+
+      <a href="signup" class="btn btn-success btn-block" role="button">Pindutin Para Sumoporta</a>
+<br>
+
+{% endblock %}

@@ -1,0 +1,101 @@
+path { fill: #d3d3d3; transition: .2s fill; }
+path:hover { fill:green; }
+
+.body{
+  font-family: Proxima Nova;
+}
+
+.home {
+  background-image: url("static/farmer.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.wrap
+    {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+* { box-sizing: border-box; }
+body {
+  background:#F6EDD9;
+  color: #42493A;
+}
+
+h1 {
+    font-family: "Proxima Nova", sans-serif}
+  body, html {height: 100%}
+
+  .bgimg {
+    min-height: 50%;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  .row2{
+    padding-top: 40px;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+  .middle{position:absolute;
+    font-size:50%;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)}
+
+.wrap
+    {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+
+.left{
+      position:absolute;
+      top:35%;
+      left:25%;
+      transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);}
+
+.button3 {
+        font-family: "Proxima Nova";
+        position: relative;
+        top:50%;
+        left:25%;
+        background-color: #42493A; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        }
+
+
+h2 {
+font-family: "Proxima Nova", sans-serif}
+
+
+h3 {
+font-family: "Proxima Nova", sans-serif}
+
+
+h4 {
+font-family: "Proxima Nova", sans-serif}
+
+h5 {
+font-family: "Proxima Nova", sans-serif}
+
+
+a {
+font-family: "Proxima Nova", sans-serif}

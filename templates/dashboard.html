@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% block title %} Dashboard {% endblock %}
+{% block content %}
+
+<div class="card bg-dark text-white">
+  <img class="card-img" src="static/regions/demand.jpg" alt="Card image">
+  <div class="card-img-overlay">
+    <h1 class="card-title">Welcome, {{ name }}</h1>
+  </div>
+</div>
+
+
+<div class="card-group">
+  <div class="card" style="width: 30rem;">
+
+      <form method="POST", action="/dashboard">
+        <div class="dropdown">
+				  <select name="region" id="province" class="browser-default custom-select">
+          <option value="Region I">Region I</option>
+          <option value="Region II">Region II</option>
+					<option value="Region III">Region III</option>
+          <option value="CAR">CAR</option>
+          <option value="Region IV-A">Region IV-A</option>
+          <option value="MIMAROPA">MIMAROPA</option>
+				    </select>
+			   </div>
+
+<br>
+        <h3> Choose What Produce To Graph </h3>
+      <div class="dropdown">
+        <select name="crops" id="harvest" class="browser-default custom-select">
+        <option value="Palay">Palay</option>
+        <option value="Corn">Corn</option>
+        <option value="Banana">Banana</option>
+        <option value="Calamansi">Calamansi</option>
+        <option value="Durian">Durian</option>
+        <option value="Lanzones">Lanzones</option>
+        <option value="Mango">Mango</option>
+        <option value="Orange">Orange</option>
+        <option value="Papaya">Papaya</option>
+        <option value="Pineapple">Pineapple</option>
+        <option value="Rambutan">Rambutan</option>
+        <option value="Tamarind">Tamarind</option>
+        <option value="Watermelon">Watermelon</option>
+        <option value="Coconut">Coconut</option>
+        </select>
+      </div>
+
+  <br>
+
+      <div class="center-screen">
+				<input class="btn btn-primary" type="submit" value="See The Graph">
+			</div class="buttonHolder">
+
+
+      </form>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="{{line}}" alt="Card image cap" height=300 width=100>
+      </div>
+
+  <div class="card">
+    <img class="card-img-top" src="{{bar}}" alt="Card image cap" height=300 width=100>
+  </div>
+</div>
+
+<br>
+
+<div class="card-group">
+  <div class="card">
+    <img class="card-img" src="static/regions/header.jpg" alt="Card image">
+    <div class="card-body">
+    </div>
+  </div>
+  <div class="card">
+    <img class = "card-img-top" src="{{price_chart}}" alt="Price of Palay" height=300 width=500>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="static/calendar.jpg" alt="Card image cap">
+  </div>
+</div>
+  <h1> {{price}}</h1>
+
+
+  <div class="card bg-dark text-white">
+    <img src="static/regions/signup.jpg" class="card-img" alt="Farmer" height = 200>
+    <div class="card-img-overlay">
+      <h2 class="card-title">Agriculture Articles</h2>
+    </div>
+  </div>
+
+<br>
+
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="static/farmer2.jpeg" class="card-img" alt="agri1" height = 200 width= 100>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Artikulo Uno | Bukirin ni Mang Jose </h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <hr>
+          <a href="#" class="btn btn-success" role="button">Tulungan | Donasyon para sa Bukirin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="static/farmer3.jpeg" class="card-img" alt="agri1" height = 200 width= 100>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Artikulo Dos | Bukirin ni Mang Roberto</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <hr>
+          <a href="#" class="btn btn-success" role="button">Tulungan | Donasyon para sa Bukirin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+{% endblock %}
