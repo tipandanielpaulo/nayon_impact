@@ -3,16 +3,17 @@ Team Kalinaw is establishing an online web application and service that provides
 
 ## How to Run Code
 
-1.) Install Python
+1.) Install Python adn PIP
 
 
-2.) Download this Code Repository
+2.) Download this Code Repository as zip and extract it in your chosen directory.
 
 
-3.) Install Packages in the **requirements.txt**
+3.) In your cmd run, **pip install -r requirements.txt --no-index --find-links file:///tmp/packages**
 
 
-4.) In your directory, run >>>python **main.py** 
+4.) Then in the same directory, run 
 
+-python main.py
 
-5.) Sign up and Enjoy
+5.) Sign up, See the Graphs and Enjoy. 
