@@ -9,10 +9,10 @@ Team Kalinaw is establishing an online web application and service that provides
 2.) Download this Code Repository
 
 
-3.) Install Packages in the requirements.txt
+3.) Install Packages in the **requirements.txt**
 
 
-4.) In your directory, run >>>python main.py 
+4.) In your directory, run >>>python **main.py** 
 
 
 5.) Sign up and Enjoy
