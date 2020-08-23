@@ -19,3 +19,7 @@ Team Kalinaw is establishing an online web application and service that provides
 **python main.py**
 
 5.) Open your browser and go to http://127.0.0.1:5000. Sign up, see the app and the graphs.
+
+##Alternative:
+
+Go to, https://nayon-app.herokuapp.com
